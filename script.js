@@ -486,7 +486,7 @@ function enviarWhats() {
     mensagem += `\n*Observações:* ${observacoes}`;
   }
 
-  const url = `https://wa.me/5531972042118?text=${encodeURIComponent(mensagem)}`;
+  const url = `https://wa.me/553187018834?text=${encodeURIComponent(mensagem)}`;
 
   window.open(url, "_blank");
 }
