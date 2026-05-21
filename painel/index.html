@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel - Tony Espetinhos</title>
+  <link rel="stylesheet" href="painel.css">
+</head>
+<body>
+
+<div class="login" id="login">
+  <h1>Painel Tony Espetinhos</h1>
+  <input type="password" id="senha" placeholder="Digite a senha">
+  <button onclick="entrar()">Entrar</button>
+</div>
+
+<div class="painel" id="painel" style="display:none;">
+<header>
+  <h1>Produtos</h1>
+
+  <div class="topo-acoes">
+    <button onclick="abrirFormulario()">+ Novo</button>
+    <button class="cinza" onclick="sair()">Sair</button>
+  </div>
+</header>
+
+  <div class="formulario" id="formulario" style="display:none;">
+    <h2 id="tituloForm">Adicionar produto</h2>
+
+    <input type="hidden" id="produtoId">
+
+    <label>Categoria</label>
+    <input type="text" id="categoria" placeholder="Ex: 🔥 Espetos">
+
+    <label>Nome</label>
+    <input type="text" id="nome" placeholder="Ex: Boi (Alcatra)">
+
+    <label>Preço</label>
+    <input type="number" id="preco" placeholder="Ex: 12" step="0.01">
+
+    <label class="check">
+      <input type="checkbox" id="adicionais">
+      Permitir adicionais
+    </label>
+
+    <button onclick="salvarProduto()">Salvar</button>
+    <button class="cinza" onclick="fecharFormulario()">Cancelar</button>
+  </div>
+
+  <div id="lista"></div>
+</div>
+
+<script src="painel.js"></script>
+</body>
+</html>
