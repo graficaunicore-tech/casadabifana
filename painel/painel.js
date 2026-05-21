@@ -1,4 +1,4 @@
-const API = "https://script.google.com/macros/s/AKfycbxvlYy5ne6ERiknhrlylLIsut-bcTzJiCrLw_gFcUbTh_MwdXSfMT4BQ_YuQ1yy3MECuA/exec";
+const API = "https://script.google.com/macros/s/AKfycbxf1EVkMulRizWsDcje1T1LAIh597qBgScLEk8_pVs8dNTvoFJnpjZ9FqUOWJJYkwF1bg/exec";
 
 let senhaGlobal = "1234";
 let produtos = [];
